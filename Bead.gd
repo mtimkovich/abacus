@@ -33,4 +33,5 @@ func move():
 func _on_Area2D_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed('ui_clicked_left'):
 		move()
+		$Click.play()
 		grid.update_value()
